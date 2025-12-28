@@ -1,30 +1,16 @@
 import { motion } from "framer-motion";
 
 const experiences = [
-  {
-    title: "Full Stack Developer",
-    company: "Tech Company",
-    period: "2023 - Present",
-    description:
-      "Leading development of scalable web applications using React and Node.js. Implementing CI/CD pipelines and mentoring junior developers.",
-    technologies: ["React", "Node.js", "TypeScript", "AWS"],
-  },
+ 
   {
     title: "Frontend Developer",
-    company: "Digital Agency",
-    period: "2022 - 2023",
+    company: "SNOVAC SYSTEMS PVT.LTD",
+    period: "2025 - Present",
     description:
       "Built responsive and performant user interfaces for various clients. Collaborated with design teams to implement pixel-perfect designs.",
-    technologies: ["React", "Redux", "Tailwind CSS", "Git"],
+    technologies: ["React","Vue js", "Tailwind CSS", "Git"],
   },
-  {
-    title: "Junior Developer",
-    company: "Startup",
-    period: "2021 - 2022",
-    description:
-      "Started my journey as a developer, learning best practices and contributing to multiple projects. Gained experience in agile methodologies.",
-    technologies: ["JavaScript", "HTML/CSS", "Node.js", "MongoDB"],
-  },
+ 
 ];
 
 const ExperienceSection = () => {

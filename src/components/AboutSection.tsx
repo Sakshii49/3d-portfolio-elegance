@@ -79,26 +79,8 @@ const AboutSection = () => {
               continuously learning new technologies.
             </p>
 
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { label: "Years Experience", value: "3+" },
-                { label: "Projects Completed", value: "25+" },
-                { label: "Technologies", value: "15+" },
-                { label: "Happy Clients", value: "20+" },
-              ].map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 + 0.4 }}
-                  className="p-4 rounded-xl bg-card border border-border/50"
-                >
-                  <div className="text-3xl font-bold text-gradient">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
+            
+           
           </motion.div>
         </motion.div>
       </div>

@@ -6,13 +6,13 @@ const skills = [
   { name: "TypeScript", icon: "📘" },
   { name: "Vue.js", icon: "💚" },
   { name: "Git", icon: "📦" },
-  { name: "Docker", icon: "🐳" },
+  { name: "Networking", icon: "🌐" },
   { name: "CI/CD", icon: "🔄" },
   { name: "AWS", icon: "☁️" },
   { name: "MongoDB", icon: "🍃" },
-  { name: "PostgreSQL", icon: "🐘" },
-  { name: "Linux", icon: "🐧" },
+  { name: "MySQL", icon: "🐘" },
   { name: "REST APIs", icon: "🔗" },
+  { name: "cloud fundamentals", icon: "☁️" },
 ];
 
 const SkillsSection = () => {

@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
+import { Github } from "lucide-react";
 
 const projects = [
   {
     title: "AI Ad Maker",
     description:
       "An intelligent advertisement creation platform powered by AI/ML. Generates compelling ad copy, designs, and campaigns using machine learning algorithms and natural language processing.",
-    technologies: ["Python", "TensorFlow", "React", "Node.js", "OpenAI API"],
+    technologies: ["Python", "TensorFlow", "ML models", "skicit-Learn", "OpenAI API"],
     category: "AI / ML",
     gradient: "from-orange-500 to-red-500",
+    github: "https://github.com/your-username/ai-ad-maker",
   },
   {
     title: "Live Website Builder - React",
@@ -16,6 +18,7 @@ const projects = [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Firebase", "Vite"],
     category: "Web App",
     gradient: "from-cyan-500 to-blue-500",
+    github: "https://github.com/your-username/react-live-website-builder",
   },
   {
     title: "Live Website Builder - Vue",
@@ -24,6 +27,7 @@ const projects = [
     technologies: ["Vue.js", "Vuex", "Nuxt.js", "Node.js", "MongoDB"],
     category: "Web App",
     gradient: "from-green-500 to-emerald-500",
+    github: "https://github.com/your-username/vue-live-website-builder",
   },
 ];
 
@@ -95,6 +99,19 @@ const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
+                {project.github && (
+                  <motion.a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.03, y: -1 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="mt-6 inline-flex items-center gap-2 px-4 py-2 border border-border rounded-full font-semibold text-sm hover:border-primary/50 hover:text-primary transition-colors"
+                  >
+                    <Github className="w-4 h-4" />
+                    View on GitHub
+                  </motion.a>
+                )}
               </div>
 
               {/* Hover glow effect */}
